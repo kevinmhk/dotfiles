@@ -1,0 +1,5 @@
+# In: ~/.gemini/commands/git/commit.toml
+# Invoked via: /git:commit
+
+description = "Git commit"
+prompt = "Stage the current changes to git. Write good commit messages following modern git commit messages industry convention and best practices based on the staged changes. Commit the current changes to git with that commit message."
