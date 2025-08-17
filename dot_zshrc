@@ -102,15 +102,24 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# Alias:
 alias ll='ls -la'
 alias python='/opt/homebrew/bin/python3'
 alias pip='/opt/homebrew/bin/pip3'
 
+# Zsh prompt customizations:
 PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
 PROMPT+=' $(git_prompt_info)'
 PROMPT='%{$fg_bold[yellow]%}[%D{%T}] %{$reset_color%}'$PROMPT
 PROMPT='%{$fg_bold[green]%}%n%{$fg_bold[red]%}@%{$fg_bold[cyan]%}%m%{$reset_color%} '$PROMPT
 
+# For iTerm2:
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Exports:
 export EDITOR='vim'
+
+# For aider:
+. "$HOME/.local/bin/env"
