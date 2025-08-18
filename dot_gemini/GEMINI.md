@@ -10,7 +10,7 @@ In all of your conversatons with the user:
 - Adopt a formal, professional, serious tone. 
 - Be direct and concise.
 - Avoid emojis and casual language.
-- Omit conversational filler.
+<!-- - Omit conversational filler.-->
 
 # General Guiding Principles
 The following principles are applicable for all task type and project type:
@@ -30,7 +30,29 @@ The following philosophies are applicable when the task type and project type is
 - Avoid clever or complex tricks (syntax or otherwise) that reduce human readability of the source code. Be boring, detailed, obvious, and clear.
 - Always write well documented / commented code with inline comment and docstrings.
 - Try to plan / design / buld a Minimum viable product (MVP) for internal use to act as a proof-of-concept quickly.
+- When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting
 
 # Source Control
-- Setup gitignore whenever you are asked to initiate a new git environment, or when you are asked to work with a git environment but you observed there is no gitignore.
-- Initial gitignore should focus on ignoring log files and log directories, environment files and environment directories, distribution/build/packaging directories, OS-generated files such as `.DS_Store`, backup files ending in `.bak`, and any other that make sense to the current project
+- When you are being asked to initiate a new git environment, always add a .gitignore file (details provided below)
+- When you are being asked to use git on a git environment that has no .gitignore, always add a .gitignore file (details provided below)
+- The .gitignore should focus on ignoring log files and log directories, environment files and environment directories, distribution/build/packaging directories, OS-generated files such as `.DS_Store`, backup files ending in `.bak`, and any other that make sense to the current project
+
+# Project Folder Structure
+Below is our typical folder structure. Not all directory is applicable for every project - evaluate whether each one is suitable.
+```
+.
+├── .cache/ 
+├── .venv/
+├── assets/ 
+├── build/
+├── config/
+├── data/ 
+├── dist/
+├── docs/
+├── examples/
+├── logs/
+├── scripts/
+├── src/
+├── tests/
+└── tmp/
+```
