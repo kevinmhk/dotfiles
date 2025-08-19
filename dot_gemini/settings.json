@@ -1,0 +1,16 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+  "mcpServers": {
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp"
+    }
+  },
+  "fileFiltering": {
+  	"respectGitIgnore": false,
+  	"enableRecursiveFileSearch": true
+  },
+  "hasSeenIdeIntegrationNudge": true,
+  "ideMode": true,
+  "preferredEditor": "vscode"
+}
