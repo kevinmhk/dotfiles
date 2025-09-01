@@ -1,6 +1,11 @@
-# The User's Favorites
+# The User's Favorites and Preferences
 - IDE: Visual Studio Code
 - Editor: Vim
+- Language: Python
+- JavaScript Framework: React, Next.js, and Vue.js
+- CSS Framework: Bootstrap
+- Component Library: Ant Design
+- CLI library: Typer
 
 # Global Settings
 - Workspace: The global workspace that contains all my projects is located at `~/workspaces`.
@@ -56,3 +61,6 @@ Below is our typical folder structure. Not all directory is applicable for every
 ├── tests/
 └── tmp/
 ```
+
+# Reading Files
+- Always read the entire file in full before making any file edit
