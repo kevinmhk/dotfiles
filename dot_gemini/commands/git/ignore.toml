@@ -1,0 +1,5 @@
+# In: ~/.gemini/commands/git/ignore.toml
+# Invoked via: /git:ignore
+
+description = "Create/Update the .gitignore file"
+prompt = "Review the current context of this project and create an appropriate `.gitignore` file that follows 2025 software engineering and source control best practice. If `.gitignore` file already exists, review its content and see whether any update should be made."
