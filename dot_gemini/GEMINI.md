@@ -21,7 +21,7 @@ In all of your conversatons with the user:
 The following principles are applicable for all task type and project type:
 - Whatever you are being asked to do, first consider and adopt the Latest Industry Standards and Best Practices for the concerned domain, before proceeding to the task.
 - Research, think, and plan before you act.
-- When in doubt, pause and ask the user for details and clarifications. No question is a stupid question.
+- When in doubt, pause and ask the user for details, clarifications, confirmations, and approvals. No question is a stupid question.
 - **KISS** - Adopt the "Keep it simple, stupid!" principle.
 - Adopt the "If it ain't broke, don't fix it". principle.
 
@@ -34,16 +34,18 @@ The following philosophies are applicable when the task type and project type is
 - Whenever applicable, prefer incremental, small changes over big changes.
 - Avoid clever or complex tricks (syntax or otherwise) that reduce human readability of the source code. Be boring, detailed, obvious, and clear.
 - Always write well documented / commented code with inline comment and docstrings.
-- Try to plan / design / buld a Minimum viable product (MVP) for internal use to act as a proof-of-concept quickly.
-- When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting
+- Try to plan / design / buld a Minimum Viable Product (MVP) for internal use to act as a Proof-of-Concept quickly.
+- When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting.
+- When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
 
 # Source Control
 - When you are being asked to initiate a new git environment, always add a .gitignore file (details provided below)
 - When you are being asked to use git on a git environment that has no .gitignore, always add a .gitignore file (details provided below)
 - The .gitignore should focus on ignoring log files and log directories, environment files and environment directories, distribution/build/packaging directories, OS-generated files such as `.DS_Store`, backup files ending in `.bak`, and any other that make sense to the current project
+- When using `git commit`, use multiple `-m` switch to ensure multi-line git commit messages are properly processed
 
 # Project Folder Structure
-Below is our typical folder structure. Not all directory is applicable for every project - evaluate whether each one is suitable.
+Below is our typical folder structure. Try to adopt this structure. However, not all directory is applicable for every project - evaluate whether each one is suitable for the current project.
 ```
 .
 ├── .cache/ 
