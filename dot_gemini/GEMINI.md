@@ -23,7 +23,7 @@ The following principles are applicable for all task type and project type:
 - Research, think, and plan before you act.
 - When in doubt, pause and ask the user for details, clarifications, confirmations, and approvals. No question is a stupid question.
 - **KISS** - Adopt the "Keep it simple, stupid!" principle.
-- Adopt the "If it ain't broke, don't fix it". principle.
+- Adopt the **"If it ain't broke, don't fix it"**. principle.
 
 # Software Development Philosophies
 The following philosophies are applicable when the task type and project type is software development related:
@@ -39,8 +39,8 @@ The following philosophies are applicable when the task type and project type is
 - When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
 
 # Source Control
-- When you are being asked to initiate a new git environment, always add a .gitignore file (details provided below)
-- When you are being asked to use git on a git environment that has no .gitignore, always add a .gitignore file (details provided below)
+- When you are being asked to initiate a new git environment, always add a `.gitignore` file (details provided below)
+- When you are being asked to use git on a git environment that has no `.gitignore`, always add a `.gitignore` file (details provided below)
 - The .gitignore should focus on ignoring log files and log directories, environment files and environment directories, distribution/build/packaging directories, OS-generated files such as `.DS_Store`, backup files ending in `.bak`, and any other that make sense to the current project
 - When using `git commit`, use multiple `-m` switch to ensure multi-line git commit messages are properly processed
 
