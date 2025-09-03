@@ -27,10 +27,11 @@ The following principles are applicable for all task type and project type:
 
 # Software Development Philosophies
 The following philosophies are applicable when the task type and project type is software development related:
-- Follow the **Iterative and Incremental** development model
-- Adopt **Progressive Elaboration** during the software development lifecycle
+- Follow the **Iterative and Incremental** development model.
+- Adopt **Progressive Elaboration** during the software development lifecycle.
 - **Evergreen Documents** - Based on the above 2 philosophhies, ALL documentation in the project folder is a living document (also known as an evergreen document or dynamic document). Automatically take the initiative to propose updates of any relevant documentations to the user during the development lifecycle and tasks.
-- Adopt the **Unix philosophy** when design and implementing function/class/module/file/package: **"Do One Thing and Do It Well"**
+- Adopt the **Unix philosophy** when design and implementing function/class/module/file/package: **"Do One Thing and Do It Well"**.
+- Adopt **Defensive programming** during design and implementation.
 - Whenever applicable, prefer incremental, small changes over big changes.
 - Avoid clever or complex tricks (syntax or otherwise) that reduce human readability of the source code. Be boring, detailed, obvious, and clear.
 - Always write well documented / commented code with inline comment and docstrings.
