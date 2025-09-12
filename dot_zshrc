@@ -125,4 +125,4 @@ export EDITOR='vim'
 . "$HOME/.local/bin/env"
 
 # Greeting messages about available AI tools:
-echo "~/.local/bin/zsh_welcome.sh"
+~/.local/bin/zsh_welcome.sh
