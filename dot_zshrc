@@ -123,3 +123,6 @@ export EDITOR='vim'
 
 # For aider:
 . "$HOME/.local/bin/env"
+
+# Greeting messages about available AI tools:
+echo "~/.local/bin/zsh_welcome.sh"
