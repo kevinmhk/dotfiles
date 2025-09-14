@@ -27,6 +27,7 @@ The following principles are applicable for all task type and project type:
 
 # Software Development Philosophies
 The following philosophies are applicable when the task type and project type is software development related:
+- Follow the **Spec Driven Development** approach. We preferred this approach over Test Driven Development.
 - Follow the **Iterative and Incremental** development model.
 - Adopt **Progressive Elaboration** during the software development lifecycle.
 - **Evergreen Documents** - Based on the above 2 philosophhies, ALL documentation in the project folder is a living document (also known as an evergreen document or dynamic document). Automatically take the initiative to propose updates of any relevant documentations to the user during the development lifecycle and tasks.
@@ -46,7 +47,7 @@ The following philosophies are applicable when the task type and project type is
 - When using `git commit`, use multiple `-m` switch to ensure multi-line git commit messages are properly processed
 
 # Project Folder Structure
-Below is our typical folder structure. Try to adopt this structure. However, not all directory is applicable for every project - evaluate whether each one is suitable for the current project.
+Below is our preferred folder structure. Try to adopt this structure. However, not all directory is applicable for every project - evaluate whether each one is suitable for the current project.
 ```
 .
 ├── .cache/ 
