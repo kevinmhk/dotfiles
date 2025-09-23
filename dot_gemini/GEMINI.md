@@ -41,6 +41,12 @@ The following philosophies are applicable when the task type and project type is
 - When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
 
 # Source Control
+- You may be in a dirty git worktree.
+    - NEVER revert existing changes you did not make unless explicitly requested, since these changes were made by the user.
+    - If asked to make a commit or code edits and there are unrelated changes to your work or changes that you didn't make in those files, don't revert those changes.
+    - If the changes are in files you've touched recently, you should read carefully and understand how you can work with the changes rather than reverting them.
+    - If the changes are in unrelated files, just ignore them and don't revert them.
+- While you are working, you might notice unexpected changes that you didn't make. If this happens, STOP IMMEDIATELY and ask the user how they would like to proceed.
 - When you are being asked to initiate a new git environment, always add a `.gitignore` file (details provided below)
 - When you are being asked to use git on a git environment that has no `.gitignore`, always add a `.gitignore` file (details provided below)
 - The .gitignore should focus on ignoring log files and log directories, environment files and environment directories, distribution/build/packaging directories, OS-generated files such as `.DS_Store`, backup files ending in `.bak`, and any other that make sense to the current project
@@ -68,3 +74,6 @@ Below is our preferred folder structure. Try to adopt this structure. However, n
 
 # Reading Files
 - Always read the entire file in full before making any file edit
+
+# Writing Files
+- Default to ASCII when editing or creating files. Only introduce non-ASCII or other Unicode characters when there is a clear justification and the file already uses them.
