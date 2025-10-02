@@ -1,0 +1,15 @@
+[projects."/Users/kevinmhk/workspaces/hk_startup_setup"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/program_trade_ib"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/zsh_chezmoi_status_welcome_message"]
+trust_level = "trusted"
+
+# User is never prompted: if the command fails, Codex will automatically try
+# something out. Note the `exec` subcommand always uses this mode.
+approval_policy = "never"
+
+[tools]
+web_search = true
