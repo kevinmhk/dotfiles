@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -la'
 alias python='/opt/homebrew/bin/python3'
 alias pip='/opt/homebrew/bin/pip3'
+alias codex='codex --yolo --search'
 
 # Zsh prompt customizations:
 PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
