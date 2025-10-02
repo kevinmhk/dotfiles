@@ -129,5 +129,8 @@ export EDITOR='vim'
 # Greeting messages about available AI tools:
 ~/.local/bin/zsh_welcome.sh
 
+# Greeting messages about chezmoi status:
+[ -x "$HOME/.local/bin/chezmoi_status_check.sh" ] && "$HOME/.local/bin/chezmoi_status_check.sh"
+
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
