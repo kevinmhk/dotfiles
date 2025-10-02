@@ -11,5 +11,8 @@ trust_level = "trusted"
 # something out. Note the `exec` subcommand always uses this mode.
 approval_policy = "never"
 
+# same as `--sandbox danger-full-access`
+sandbox_mode = "danger-full-access"
+
 [tools]
 web_search = true
