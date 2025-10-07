@@ -108,14 +108,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias:
 alias ll='ls -la'
-alias codex='codex --yolo --search'
-
-{{ if eq .chezmoi.os "darwin" -}}
-# macOS specific alias:
 alias python='/opt/homebrew/bin/python3'
 alias pip='/opt/homebrew/bin/pip3'
-{{ end -}}
-
+alias codex='codex --yolo --search'
 
 # Zsh prompt customizations:
 PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
@@ -123,24 +118,11 @@ PROMPT+=' $(git_prompt_info)'
 PROMPT='%{$fg_bold[yellow]%}[%D{%T}] %{$reset_color%}'$PROMPT
 PROMPT='%{$fg_bold[green]%}%n%{$fg_bold[red]%}@%{$fg_bold[cyan]%}%m%{$reset_color%} '$PROMPT
 
-{{ if eq .chezmoi.os "darwin" -}}
-# macOS specific for iTerm2:
+# For iTerm2:
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-{{ end -}}
 
 # Exports:
 export EDITOR='vim'
-
-{{ if eq .chezmoi.hostname "kevinmhk-MacBookAir6-2" -}}
-# Ubuntu-on-Macbook-Air-2013 specific Exports:
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH="/home/kevinmhk/.nvm/versions/node/v22.20.0:$PATH"
-export PATH="/home/kevinmhk/.local/bin:$PATH"
-{{ end -}}
-
 
 # For aider:
 . "$HOME/.local/bin/env"
