@@ -116,6 +116,11 @@ alias python='/opt/homebrew/bin/python3'
 alias pip='/opt/homebrew/bin/pip3'
 {{ end -}}
 
+{{ if eq .chezmoi.hostname "kevinmhk-MacBookAir6-2" -}}
+# Ubuntu-on-Macbook-Air-2013 specific alias:
+alias ssh-mac='ssh kevinmhk@kevins-mac-studio'
+{{ end -}}
+
 
 # Zsh prompt customizations:
 PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
@@ -143,7 +148,11 @@ export PATH="/home/kevinmhk/.local/bin:$PATH"
 
 
 # For aider:
-. "$HOME/.local/bin/env"
+if [ -f "$HOME/.local/bin/env" ]; then
+	. "$HOME/.local/bin/env"
+fi
+
+
 
 # Greeting messages about available AI tools:
 ~/.local/bin/zsh_welcome.sh
