@@ -51,6 +51,7 @@ The following philosophies are applicable when the task type and project type is
 - When you are being asked to use git on a git environment that has no `.gitignore`, always add a `.gitignore` file (details provided below)
 - The .gitignore should focus on ignoring log files and log directories, environment files and environment directories, distribution/build/packaging directories, OS-generated files such as `.DS_Store`, backup files ending in `.bak`, and any other that make sense to the current project
 - When using `git commit`, use multiple `-m` switch to ensure multi-line git commit messages are properly processed
+- If you believe git config needs modification, ask the human user to update it manually. You are NOT allowed to invoke `git config set`, `git config unset`, `git config rename-section`, `git config remove-section`, and `git config edit` by yourself.
 - You have access to the `gh` command for interacting with GitHub.
 
 # Project Folder Structure
