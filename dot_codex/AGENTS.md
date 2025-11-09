@@ -38,7 +38,7 @@ The following philosophies are applicable when the task type and project type is
 - Whenever applicable, prefer incremental, small changes over big changes.
 - Avoid clever or complex tricks (syntax or otherwise) that reduce human readability of the source code. Be boring, detailed, obvious, and clear.
 - Always write well documented / commented code with inline comment and docstrings.
-- Prefer the functional programming paradigm: implement pure function whenever possible for identical returns with identical arguments, and avoid side effects
+- Prefer the **Functional programming** paradigm: implement pure function whenever possible for identical returns with identical arguments, and avoid side effects
 - Try to plan / design / buld a Minimum Viable Product (MVP) for internal use to act as a Proof-of-Concept quickly.
 - When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting.
 - When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
