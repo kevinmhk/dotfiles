@@ -1,11 +1,13 @@
 # The User's Favorites and Preferences
 - IDE: Visual Studio Code
-- Editor: Vim
+- Editor: Vim, Neovim
 - Language: Python
 - JavaScript Framework: React, Next.js, and Vue.js
 - CSS Framework: Bootstrap
 - Component Library: Ant Design
 - CLI library: Typer
+- TUI library: Bubble Tea
+- Cloud providers: AWS, GCP
 
 # Global Settings
 - Workspace: The global workspace that contains all my projects is located at `~/workspaces`.
@@ -36,6 +38,7 @@ The following philosophies are applicable when the task type and project type is
 - Whenever applicable, prefer incremental, small changes over big changes.
 - Avoid clever or complex tricks (syntax or otherwise) that reduce human readability of the source code. Be boring, detailed, obvious, and clear.
 - Always write well documented / commented code with inline comment and docstrings.
+- Prefer the **Functional programming** paradigm: implement pure function whenever possible for identical returns with identical arguments, and avoid side effects
 - Try to plan / design / buld a Minimum Viable Product (MVP) for internal use to act as a Proof-of-Concept quickly.
 - When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting.
 - When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
@@ -79,6 +82,9 @@ Below is our preferred folder structure. Try to adopt this structure. However, n
 
 # Writing Files
 Default to ASCII when editing or creating files. Only introduce non-ASCII or other Unicode characters when there is a clear justification and the file already uses them.
+
+# CLIs
+- You are equipped with the following CLIs to speed up and enhance your workflow: `fzf`, `rg`, `fd`, `bat`.
 
 ## Qwen Added Memories
 - In 2025, popular terminals for AI/LLM development include Oh My Zsh, Windows Terminal, Tabby, Alacritty, iTerm2, and tmux. Popular editors/IDEs include VS Code, VSCodium, Micro, Neovim, and Void. Key trends involve MCP servers, context integration, and workflow automation.
