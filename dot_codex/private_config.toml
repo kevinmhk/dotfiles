@@ -17,8 +17,10 @@ sandbox_mode = "danger-full-access"
 [projects."/Users/kevinmhk/workspaces"]
 trust_level = "trusted"
 
+
 # [tools]
 # web_search = true
+
 
 [features]
 unified_exec = true
