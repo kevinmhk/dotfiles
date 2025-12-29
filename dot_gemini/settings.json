@@ -1,19 +1,4 @@
 {
-  "context": {
-    "fileFiltering": {
-      "respectGitIgnore": false,
-      "enableRecursiveFileSearch": true
-    }
-  },
-  "ide": {
-    "hasSeenNudge": true,
-    "enabled": true
-  },
-  "mcpServers": {
-    "context7": {
-      "httpUrl": "https://mcp.context7.com/mcp"
-    }
-  },
   "general": {
     "previewFeatures": true,
     "preferredEditor": "vscode"
@@ -24,6 +9,14 @@
     }
   },
   "ui": {
-    "theme": "Default"
+    "footer": {
+      "hideContextPercentage": false
+    },
+    "showModelInfoInChat": true
+  },
+  "context": {
+    "fileFiltering": {
+      "respectGitIgnore": false
+    }
   }
 }
