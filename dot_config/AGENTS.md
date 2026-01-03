@@ -7,7 +7,11 @@
 - Component Library: Ant Design
 - CLI library: Typer
 - TUI library: Bubble Tea
-- Cloud providers: AWS, GCP
+- Backend: Firebase
+- Cloud providers: GCP, AWS
+- Deployment: Vercel
+- Cross-Platform UI Framework: Flutter
+- Source Control: Git
 
 # Global Settings
 - Workspace: The global workspace that contains all my projects is located at `~/workspaces`.
