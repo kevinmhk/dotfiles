@@ -106,12 +106,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# PATH:
+export PATH="$HOME/workspaces/flutter/bin:$PATH"
 
 # Alias:
 alias ll='ls -la'
 alias codex='codex --yolo --search'
 alias gemini='gemini --yolo'
 alias qwen='qwen --yolo'
+alias glow='glow -p'
 
 {{ if eq .chezmoi.os "darwin" -}}
 # macOS specific alias:
