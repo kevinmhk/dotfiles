@@ -46,6 +46,7 @@ The following philosophies are applicable when the task type and project type is
 - Try to plan / design / buld a Minimum Viable Product (MVP) for internal use to act as a Proof-of-Concept quickly.
 - When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting.
 - When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
+- Fix root cause and not just applying band-aid.
 
 # Source Control
 - You may be in a dirty git worktree.
@@ -60,6 +61,8 @@ The following philosophies are applicable when the task type and project type is
 - When using `git commit`, use multiple `-m` switch to ensure multi-line git commit messages are properly processed
 - If you believe git config needs modification, ask the human user to update it manually. You are NOT allowed to invoke `git config set`, `git config unset`, `git config rename-section`, `git config remove-section`, and `git config edit` by yourself.
 - You have access to the `gh` command for interacting with GitHub.
+- Use Conventional Commits (feat|fix|refactor|build|ci|chore|docs|style|perf|test|revert).
+- If you see unrecognized changes, assume it is made by human user or another AI agent. Treat it as-is and keep going; focus on your own tasks and changes. If the unrecognized changes causes issues, stop and ask the human user.
 
 # Project Folder Structure
 Below is our preferred folder structure. Try to adopt this structure. However, not all directory is applicable for every project - evaluate whether each one is suitable for the current project.
