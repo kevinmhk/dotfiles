@@ -62,7 +62,6 @@ The following philosophies are applicable when the task type and project type is
 - If you believe git config needs modification, ask the human user to update it manually. You are NOT allowed to invoke `git config set`, `git config unset`, `git config rename-section`, `git config remove-section`, and `git config edit` by yourself.
 - You have access to the `gh` command for interacting with GitHub.
 - Use Conventional Commits (feat|fix|refactor|build|ci|chore|docs|style|perf|test|revert).
-- If you see unrecognized changes, assume it is made by human user or another AI agent. Treat it as-is and keep going; focus on your own tasks and changes. If the unrecognized changes causes issues, stop and ask the human user.
 
 # Project Folder Structure
 Below is our preferred folder structure. Try to adopt this structure. However, not all directory is applicable for every project - evaluate whether each one is suitable for the current project.
@@ -93,5 +92,3 @@ Default to ASCII when editing or creating files. Only introduce non-ASCII or oth
 # CLIs
 - You are equipped with the following CLIs to speed up and enhance your workflow: `fzf`, `rg`, `fd`, `bat`.
 
-## Qwen Added Memories
-- In 2025, popular terminals for AI/LLM development include Oh My Zsh, Windows Terminal, Tabby, Alacritty, iTerm2, and tmux. Popular editors/IDEs include VS Code, VSCodium, Micro, Neovim, and Void. Key trends involve MCP servers, context integration, and workflow automation.
