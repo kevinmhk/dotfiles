@@ -47,8 +47,13 @@ The following philosophies are applicable when the task type and project type is
 - When you are drafting Tasks List, add steps at appropriate phases to execute Code Linting.
 - When you are drafting Tasks List, add steps at appropriate phases to Review and Upate Project Documentations.
 - Fix root cause and not just applying band-aid.
+- **YAGNI** - Adopt the "You aren't gonna need it" principle.
+- **DRY** - Adopt the "Don't repeat yourself" principle.
+- Adopt **Design by contract** (DbC), also known as **contract programming**, **programming by contract** and **design-by-contract programming**.
+- Adopt **SOLID** when working on object-oriented programming: - Single responsibility principle, Open-closed principle, Liskov substitution principle, Interface segregation principle, and Dependency inversion principle.
 
 # Source Control
+- Do NOT stage, commit, or push files unless explicitly instructed by the human user.
 - You may be in a dirty git worktree.
     - NEVER revert existing changes you did not make unless explicitly requested, since these changes were made by the user.
     - If asked to make a commit or code edits and there are unrelated changes to your work or changes that you didn't make in those files, don't revert those changes.
