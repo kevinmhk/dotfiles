@@ -118,6 +118,16 @@ alias glow='glow -p'
 alias zcodex="zellij --layout ~/.config/zellij/layout_codex.kdl"
 alias fzf="fzf --preview 'bat --style=numbers --color=always --line-range :200 {}' --preview-window=right:60%"
 
+# Functions:
+fzfn() {
+  local file
+  file="$(fzf)" || return  # user pressed ESC / no selection
+  [[ -n "$file" ]] || return
+  nvim -- "$file"
+}
+
+
+
 {{ if eq .chezmoi.os "darwin" -}}
 # macOS specific alias:
 alias python='/opt/homebrew/bin/python3'
