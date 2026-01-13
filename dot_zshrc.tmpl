@@ -117,7 +117,7 @@ alias qwen='qwen --yolo'
 alias glow='glow -p'
 alias zcodex="zellij --layout ~/.config/zellij/layout_codex.kdl"
 alias fzf="fzf --preview 'bat --style=numbers --color=always --line-range :200 {}' --preview-window=right:60%"
-alias fzfn ="nvim \"$(fzf)\""
+alias fzfn ="nvim '$(fzf)'"
 
 {{ if eq .chezmoi.os "darwin" -}}
 # macOS specific alias:
