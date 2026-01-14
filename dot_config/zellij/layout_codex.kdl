@@ -25,11 +25,11 @@ layout {
         plugin location="status-bar"
       }
     }
-    tab name="yazi" {
+    tab name="Write" {
       pane size=1 borderless=true {
         plugin location="tab-bar"
       }
-      pane command="yazi" name="Write"
+      pane command="yazi" name="yazi + nvim"
       pane size="1" borderless=true {
         plugin location="status-bar"
       }
