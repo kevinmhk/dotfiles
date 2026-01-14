@@ -34,20 +34,4 @@ layout {
         plugin location="status-bar"
       }
     }
-    tab name="Search" {
-      pane size=1 borderless=true {
-        plugin location="tab-bar"
-      }
-      pane split_direction="vertical" {
-        pane command="fzf" size="35%" name="fzf + fzfn" {
-          args "--version"
-        }
-        pane size="65%" split_direction="horizontal" {
-          pane command="rg" size="70%" name="rg" {
-            args "-V"
-          }
-          pane size="30%" name="fd" command="fd"
-        }
-      }
-    }
 }
