@@ -8,7 +8,7 @@ layout {
           args "--yolo" "--search"
         }
         pane size="65%" split_direction="horizontal" {
-          pane command="nvim" size="70%" name="nvim"
+          pane command="yazi" size="70%" name="yazi + nvim"
           pane size="30%" name="zsh"
         }
       }
@@ -29,7 +29,7 @@ layout {
       pane size=1 borderless=true {
         plugin location="tab-bar"
       }
-      pane command="yazi" name="yazi"
+      pane command="yazi" name="Write"
       pane size="1" borderless=true {
         plugin location="status-bar"
       }
