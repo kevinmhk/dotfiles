@@ -34,7 +34,7 @@ M.base46 = {
       cursor = table.concat({
         "%#St_pos_sep#",  sep_l,
         "%#St_pos_icon#", "  ",
-        "%#St_pos_text#", " Ln %l : Col %c  %p%% ",
+        "%#St_pos_text#", " Ln %l : Col %c - %p%% ",
       }),
       encoding = table.concat({
         "%#St_pos_sep#",  sep_l,
