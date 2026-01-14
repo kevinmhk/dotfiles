@@ -21,4 +21,12 @@ M.base46 = {
 --      }
 -- }
 
+  M.ui = {
+    statusline = {
+      theme = "default",
+      separator_style="default",
+      order={"mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor"}
+  }
+}
+
 return M
