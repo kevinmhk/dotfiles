@@ -1,0 +1,37 @@
+layout {
+    tab name="Dev" {
+      pane size=1 borderless=true {
+          plugin location="tab-bar"
+      }
+      pane split_direction="vertical" {
+        pane command="gemini" size="35%" name="gemini" {
+          args "--yolo"
+        }
+        pane size="65%" split_direction="horizontal" {
+          pane command="yazi" size="70%" name="yazi + nvim"
+          pane size="30%" name="zsh"
+        }
+      }
+      pane size=1 borderless=true {
+          plugin location="status-bar"
+      }
+    }
+    tab name="Git" {
+      pane size=1 borderless=true {
+        plugin location="tab-bar"
+      }
+      pane command="lazygit" name="lazygit"
+      pane size=1 borderless=true {
+        plugin location="status-bar"
+      }
+    }
+    tab name="Write" {
+      pane size=1 borderless=true {
+        plugin location="tab-bar"
+      }
+      pane command="yazi" name="yazi + nvim"
+      pane size="1" borderless=true {
+        plugin location="status-bar"
+      }
+    }
+}
