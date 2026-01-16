@@ -28,3 +28,4 @@ shell_snapshot = true
 web_search_request = true
 view_image_tool = true
 skills = true
+steer = true
