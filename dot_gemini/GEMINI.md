@@ -52,7 +52,6 @@ The following philosophies are applicable when the task type and project type is
 - Adopt **Design by contract** (DbC), also known as **contract programming**, **programming by contract** and **design-by-contract programming**.
 - Adopt **SOLID** when working on object-oriented programming: - Single responsibility principle, Open-closed principle, Liskov substitution principle, Interface segregation principle, and Dependency inversion principle.
 
-
 # Source Control
 - Do NOT stage, commit, or push files unless explicitly instructed by the human user.
 - You may be in a dirty git worktree.
