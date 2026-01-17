@@ -92,7 +92,7 @@ Below is our preferred folder structure. Try to adopt this structure. However, n
 - Always read the entire file in full before making any file edit
 
 # Writing Files
-Default to ASCII when editing or creating files. Only introduce non-ASCII or other Unicode characters when there is a clear justification and the file already uses them.
+- Default to ASCII when editing or creating files. Only introduce non-ASCII or other Unicode characters when there is a clear justification and the file already uses them.
 
 # CLIs
 - You are equipped with the following CLIs to speed up and enhance your workflow: `fzf`, `rg`, `fd`, `bat`.
