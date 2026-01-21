@@ -9,5 +9,10 @@
       "selectedType": "qwen-oauth"
     }
   },
+  "tools": {
+    "experimental": {
+      "skills": true
+    }
+  },
   "$version": 2
 }
