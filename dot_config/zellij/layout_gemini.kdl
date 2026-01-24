@@ -8,8 +8,8 @@ layout {
           args "--yolo"
         }
         pane size="65%" split_direction="horizontal" {
-          pane command="yazi" size="70%" name="yazi + nvim"
-          pane size="30%" name="zsh"
+          pane command="yazi" size="60%" name="yazi + nvim"
+          pane size="40%" name="zsh"
         }
       }
       pane size=1 borderless=true {
