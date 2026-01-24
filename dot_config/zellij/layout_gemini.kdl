@@ -4,12 +4,12 @@ layout {
           plugin location="tab-bar"
       }
       pane split_direction="vertical" {
-        pane command="gemini" size="35%" name="gemini" {
+        pane command="gemini" size="40%" name="gemini" {
           args "--yolo"
         }
-        pane size="65%" split_direction="horizontal" {
-          pane command="yazi" size="60%" name="yazi + nvim"
-          pane size="40%" name="zsh"
+        pane size="60%" split_direction="horizontal" {
+          pane command="yazi" size="55%" name="yazi + nvim"
+          pane size="45%" name="zsh"
         }
       }
       pane size=1 borderless=true {
