@@ -1,0 +1,110 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="tab-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="status-bar"
+        }
+    }
+
+    tab name="Tab 1" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="01"
+                pane name="02"
+                pane name="03"
+            }
+            pane split_direction="vertical" {
+                pane name="04"
+                pane name="05"
+                pane name="06"
+            }
+        }
+    }
+    tab name="Tab 2" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="07"
+                pane name="08"
+                pane name="09"
+            }
+            pane split_direction="vertical" {
+                pane name="10"
+                pane name="11"
+                pane name="12"
+            }
+        }
+    }
+    tab name="Tab 3" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="13"
+                pane name="14"
+                pane name="15"
+            }
+            pane split_direction="vertical" {
+                pane name="16"
+                pane name="17"
+                pane name="18"
+            }
+        }
+    }
+    tab name="Tab 4" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="19"
+                pane name="20"
+                pane name="21"
+            }
+            pane split_direction="vertical" {
+                pane name="22"
+                pane name="23"
+                pane name="24"
+            }
+        }
+    }
+    tab name="Tab 5" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="25"
+                pane name="26"
+                pane name="27"
+            }
+            pane split_direction="vertical" {
+                pane name="28"
+                pane name="29"
+                pane name="30"
+            }
+        }
+    }
+    tab name="Tab 6" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="31"
+                pane name="32"
+                pane name="33"
+            }
+            pane split_direction="vertical" {
+                pane name="34"
+                pane name="35"
+                pane name="36"
+            }
+        }
+    }
+    tab name="Tab 7" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="37"
+                pane name="38"
+                pane name="39"
+            }
+            pane split_direction="vertical" {
+                pane name="40"
+                pane name="41"
+                pane name="42"
+            }
+        }
+    }
+}
