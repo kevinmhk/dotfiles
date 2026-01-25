@@ -107,4 +107,46 @@ layout {
             }
         }
     }
+    tab name="Tab 8" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="43"
+                pane name="44"
+                pane name="45"
+            }
+            pane split_direction="vertical" {
+                pane name="46"
+                pane name="47"
+                pane name="48"
+            }
+        }
+    }
+    tab name="Tab 9" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="49"
+                pane name="50"
+                pane name="51"
+            }
+            pane split_direction="vertical" {
+                pane name="52"
+                pane name="53"
+                pane name="54"
+            }
+        }
+    }
+    tab name="Tab 10" {
+        pane split_direction="horizontal" {
+            pane split_direction="vertical" {
+                pane name="55"
+                pane name="56"
+                pane name="57"
+            }
+            pane split_direction="vertical" {
+                pane name="58"
+                pane name="59"
+                pane name="60"
+            }
+        }
+    }
 }
