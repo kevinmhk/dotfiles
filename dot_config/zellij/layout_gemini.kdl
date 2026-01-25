@@ -1,8 +1,14 @@
 layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="tab-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="status-bar"
+        }
+    }
     tab name="Dev" {
-      pane size=1 borderless=true {
-          plugin location="tab-bar"
-      }
       pane split_direction="vertical" {
         pane command="gemini" size="40%" name="gemini" {
           args "--yolo"
@@ -12,17 +18,8 @@ layout {
           pane size="45%" name="zsh"
         }
       }
-      pane size=1 borderless=true {
-          plugin location="status-bar"
-      }
     }
     tab name="Git" {
-      pane size=1 borderless=true {
-        plugin location="tab-bar"
-      }
       pane command="lazygit" name="lazygit"
-      pane size=1 borderless=true {
-        plugin location="status-bar"
-      }
     }
 }
