@@ -21,5 +21,18 @@
   },
   "hookConfig": {
     "enabled": true
+  },
+  "hooks": {
+    "AfterModel": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "say 'Gemini is ready for input'"
+          }
+        ]
+      }
+    ]
   }
 }
