@@ -19,7 +19,7 @@
       "respectGitIgnore": false
     }
   },
-  "hookConfig": {
+  "hooksConfig": {
     "enabled": true
   },
   "hooks": {
