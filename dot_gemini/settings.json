@@ -28,7 +28,7 @@
         "matcher": "*",
         "hooks": [
           {
-            "type": "command",
+            "type": "command", 
             "command": "say 'Gemini is ready for input'"
           }
         ]
