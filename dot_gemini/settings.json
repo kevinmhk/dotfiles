@@ -18,5 +18,8 @@
     "fileFiltering": {
       "respectGitIgnore": false
     }
+  },
+  "hookConfig": {
+    "enabled": true
   }
 }
