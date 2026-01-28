@@ -30,7 +30,7 @@
           {
             "name": "speak-to-user",
             "type": "command", 
-            "command": "say 'Gemini is ready for input'"
+            "command": "say 'Gemini is ready'"
           }
         ]
       }
