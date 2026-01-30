@@ -28,8 +28,20 @@
         "matcher": "*",
         "hooks": [
           {
-            "name": "speak-to-user",
+            "name": "speak-to-user-notification",
             "type": "command", 
+            "command": "say 'Notification from Gemini'"
+          }
+        ]
+      }
+    ],
+    "AfterAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "speak-to-user-after-agent",
+            "type": "command",
             "command": "say 'Gemini is ready'"
           }
         ]
