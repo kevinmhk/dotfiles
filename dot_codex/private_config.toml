@@ -1,3 +1,4 @@
+model_personality = "pragmatic"
 [projects."/Users/kevinmhk/workspaces/hk_startup_setup"]
 trust_level = "trusted"
 
@@ -17,16 +18,14 @@ sandbox_mode = "danger-full-access"
 [projects."/Users/kevinmhk/workspaces"]
 trust_level = "trusted"
 
-
-# [tools]
-# web_search = true
-
+web_search = "live"
 
 [features]
 unified_exec = true
 shell_snapshot = true
-web_search_request = true
 view_image_tool = true
 skills = true
 steer = true
 collab = true
+apps = true
+personality = true
