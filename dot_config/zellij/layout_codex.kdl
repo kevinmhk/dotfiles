@@ -11,7 +11,7 @@ layout {
     tab name="Dev" {
       pane split_direction="vertical" {
         pane command="codex" size="40%" name="codex" {
-          args "--yolo" "--search"
+          args "resume" "--last" "--yolo" "--search"
         }
         pane size="60%" split_direction="horizontal" {
           pane command="yazi" size="55%" name="yazi + nvim"
