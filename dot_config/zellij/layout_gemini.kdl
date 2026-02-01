@@ -11,7 +11,7 @@ layout {
     tab name="Dev" {
       pane split_direction="vertical" {
         pane command="gemini" size="40%" name="gemini" {
-          args "--yolo"
+          args "--yolo" "--resume" "latest"
         }
         pane size="60%" split_direction="horizontal" {
           pane command="yazi" size="55%" name="yazi + nvim"
