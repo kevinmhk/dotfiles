@@ -1,4 +1,7 @@
 model_personality = "pragmatic"
+personality = "pragmatic"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
 [projects."/Users/kevinmhk/workspaces/hk_startup_setup"]
 trust_level = "trusted"
 
