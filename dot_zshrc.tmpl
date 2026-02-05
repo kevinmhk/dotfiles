@@ -112,7 +112,8 @@ export PATH="$HOME/workspaces/flutter/bin:$PATH"
 # Alias:
 alias ll='ls -la'
 alias codex='codex resume --last --yolo --search'
-alias gemini='gemini --yolo --resume latest'
+# As of 20260205, codex will fallback to a new thread if no session to resume, but gemini will throw error and exit
+alias gemini='gemini --yolo'
 alias qwen='qwen --yolo'
 alias glow='glow -p'
 alias zcodex="zellij --layout ~/.config/zellij/layout_codex.kdl"
