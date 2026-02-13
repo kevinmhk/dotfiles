@@ -33,3 +33,6 @@ steer = true
 collab = true
 apps = true
 personality = true
+
+[tui]
+status_line = ["model-with-reasoning", "current-dir", "project-root", "git-branch", "context-used"]
