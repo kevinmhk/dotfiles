@@ -1,4 +1,0 @@
-interface:
-  display_name: "Flutter Firebase Webapp Bootstrap"
-  short_description: "Bootstrap Flutter web apps with Firebase"
-  default_prompt: "Scaffold a Flutter web app, integrate Firebase configuration, and update required project docs."
