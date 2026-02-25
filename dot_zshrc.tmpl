@@ -122,8 +122,9 @@ alias zgemini="zellij --layout ~/.config/zellij/layout_gemini.kdl"
 alias zpi="zellij --layout ~/.config/zellij/layout_pi.kdl"
 alias fzf="fzf --preview 'bat --style=numbers --color=always --line-range :200 {}' --preview-window=right:60%"
 alias helix="hx"
-alias upgrade-all="brew update && brew upgrade && uv tool upgrade --all && npm upgrade -g"
+alias upgrade-all="brew update && brew upgrade && uv tool upgrade --all && npm update -g"
 alias fd="fd -u"
+alias npm-update-verbose="npm update -g --timing --fetch-timeout=600000 --fetch-retries=5 --fetch-retry-mintimeout=20000 --fetch-retry-maxtimeout=120000 --loglevel=verbose"
 
 # Functions:
 fzfn() {
