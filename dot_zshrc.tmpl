@@ -150,10 +150,11 @@ alias python='python3'
 
 
 # Zsh prompt customizations:
-PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
-PROMPT+=' $(git_prompt_info)'
-PROMPT='%{$fg_bold[yellow]%}[%D{%T}] %{$reset_color%}'$PROMPT
-PROMPT='%{$fg_bold[green]%}%n%{$fg_bold[red]%}@%{$fg_bold[cyan]%}%m%{$reset_color%} '$PROMPT
+# PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%~%{$reset_color%}"
+# PROMPT+=' $(git_prompt_info)'
+# PROMPT='%{$fg_bold[yellow]%}[%D{%T}] %{$reset_color%}'$PROMPT
+# PROMPT='%{$fg_bold[green]%}%n%{$fg_bold[red]%}@%{$fg_bold[cyan]%}%m%{$reset_color%} '$PROMPT
+eval "$(starship init zsh)"
 
 {{ if eq .chezmoi.os "darwin" -}}
 # macOS specific for iTerm2:
