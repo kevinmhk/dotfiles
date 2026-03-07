@@ -156,6 +156,7 @@ alias python='python3'
 # PROMPT='%{$fg_bold[green]%}%n%{$fg_bold[red]%}@%{$fg_bold[cyan]%}%m%{$reset_color%} '$PROMPT
 eval "$(starship init zsh)"
 
+
 {{ if eq .chezmoi.os "darwin" -}}
 # macOS specific for iTerm2:
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
