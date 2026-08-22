@@ -1,8 +1,13 @@
 personality = "pragmatic"
 approval_policy = "never"
 sandbox_mode = "danger-full-access"
-model = "gpt-5.4"
+model = "gpt-5.6-sol"
 model_reasoning_effort = "high"
+
+
+notify = ["/Users/kevinmhk/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+service_tier = "default"
+
 [projects."/Users/kevinmhk/workspaces/hk_startup_setup"]
 trust_level = "trusted"
 
@@ -24,6 +29,54 @@ trust_level = "trusted"
 
 web_search = "live"
 
+[projects."/Users/kevinmhk/workspaces/my_stack_setup"]
+trust_level = "trusted"
+
+[projects."/"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/vps-gui-scripts"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/GenSeed"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/GenSeed/crawler-scraper"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/.codex/.chatgpt-projects/g-p-68d41b0693048191beafefdba85fd35b"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/.codex/.chatgpt-projects/g-p-68bc4f1a693c81918b9bf720544bc163"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/.codex/.chatgpt-projects/g-p-68bba83a2c4c81919e101c159edbbb59"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/tradingview-setup"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/machine-learning-financial-market"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/telegram-bot"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/local-natural-tts-reader"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-18/sol"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/financial-research"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-19/sho"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/quant-research"]
+trust_level = "trusted"
+
 [features]
 unified_exec = true
 shell_snapshot = true
@@ -34,10 +87,140 @@ apps = true
 personality = true
 multi_agent = true
 prevent_idle_sleep = true
+js_repl = false
 
 [tui]
-status_line = ["model-with-reasoning", "current-dir", "project-root", "git-branch", "context-used", "total-input-tokens", "total-output-tokens"]
+status_line = ["model-with-reasoning", "current-dir", "project-name", "git-branch", "context-used", "total-input-tokens", "total-output-tokens", "five-hour-limit", "weekly-limit"]
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
 
 [mcp_servers.figma]
 url = "https://mcp.figma.com/mcp"
 enabled = true
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/kevinmhk/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "/Users/kevinmhk/.codex"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_TINYSKY_ENABLED = "0"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.818.41509"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/kevinmhk/.codex/plugins/cache/openai-bundled/browser/26.818.41509/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_SERVICE_PATH = "/Users/kevinmhk/.codex/computer-use/Codex Computer Use.app"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[plugins."google-calendar@openai-curated"]
+enabled = true
+
+[plugins."gmail@openai-curated"]
+enabled = true
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."google-drive@openai-curated"]
+enabled = true
+
+[plugins."figma@openai-curated"]
+enabled = true
+
+[plugins."notion@openai-curated"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = "/Users/kevinmhk/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-08-19T23:23:22Z"
+source_type = "local"
+source = "/Users/kevinmhk/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[desktop]
+appearanceLightCodeThemeId = "codex"
+usePointerCursors = true
+followUpQueueMode = "steer"
+preventSleepWhileRunning = true
+keepRemoteControlAwakeWhilePluggedIn = true
+notifications-turn-mode = "always"
+conversationDetailMode = "STEPS_PROSE"
+dock-icon-preference = "codex-system"
+show-context-window-usage = true
+selected-avatar-id = "dewey"
+
+[desktop.appearanceLightChromeTheme]
+accent = "#0169cc"
+contrast = 45
+ink = "#0d0d0d"
+opaqueWindows = false
+surface = "#ffffff"
+
+[desktop.appearanceLightChromeTheme.fonts]
+
+[desktop.appearanceLightChromeTheme.semanticColors]
+diffAdded = "#00a240"
+diffRemoved = "#e02e2a"
+skill = "#751ed9"
+
+[desktop.open-in-target-preferences]
+global = "fileManager"
+
+[desktop.open-in-target-preferences.perPath]
+"/Users/kevinmhk/workspaces/GenSeed/crawler-scraper" = "zed"
+"/Users/kevinmhk/workspaces/GenSeed/eu-commission-cosing-functions" = "vscode"
+"/Users/kevinmhk/workspaces/changelogs-cli" = "vscode"
+"/Users/kevinmhk/workspaces/machine-learning-financial-market" = "fileManager"
+
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "9230e2bd8b24b7ac7a0ba6774c64bf0d78ecdabbdd91d0ed627b02a587bae2df"
