@@ -1,8 +1,8 @@
 personality = "pragmatic"
 approval_policy = "never"
 sandbox_mode = "danger-full-access"
-model = "gpt-5.6-sol"
-model_reasoning_effort = "high"
+model = "gpt-5.6-luna"
+model_reasoning_effort = "medium"
 
 
 notify = ["/Users/kevinmhk/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
@@ -77,6 +77,39 @@ trust_level = "trusted"
 [projects."/Users/kevinmhk/workspaces/quant-research"]
 trust_level = "trusted"
 
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-25/su"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-25/summarize"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-25/summarize-2"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-25/summarize-3"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-08-28/sum"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/my_tools"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/codex-continuous-improvement"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/obsidian_vault"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/Documents/Codex/2026-09-10/firs"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/personal-quant-research-platform"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/populate_coding_agents_config"]
+trust_level = "trusted"
+
 [features]
 unified_exec = true
 shell_snapshot = true
@@ -111,13 +144,13 @@ NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin
 NODE_REPL_TRUSTED_CODE_PATHS = "/Users/kevinmhk/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
 CODEX_HOME = "/Users/kevinmhk/.codex"
 BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
-BROWSER_USE_TINYSKY_ENABLED = "0"
-NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
-NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
-NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
-BROWSER_USE_CODEX_APP_VERSION = "26.818.41509"
-NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/kevinmhk/.codex/plugins/cache/openai-bundled/browser/26.818.41509/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+BROWSER_USE_CODEX_APP_VERSION = "26.908.40834"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/kevinmhk/.codex/plugins/cache/openai-bundled/browser/26.908.40834/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
 SKY_CUA_SERVICE_PATH = "/Users/kevinmhk/.codex/computer-use/Codex Computer Use.app"
 CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
 
@@ -160,9 +193,6 @@ enabled = true
 [plugins."template-creator@openai-primary-runtime"]
 enabled = true
 
-[plugins."sites@openai-bundled"]
-enabled = true
-
 [plugins."visualize@openai-bundled"]
 enabled = true
 
@@ -178,14 +208,26 @@ enabled = true
 [plugins."codex-app-tools@openai-bundled"]
 enabled = true
 
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."ponytail@ponytail"]
+enabled = true
+
 [marketplaces.openai-bundled]
 source_type = "local"
 source = "/Users/kevinmhk/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [marketplaces.openai-primary-runtime]
-last_updated = "2026-08-19T23:23:22Z"
 source_type = "local"
 source = "/Users/kevinmhk/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[marketplaces.ponytail]
+source_type = "git"
+source = "https://github.com/DietrichGebert/ponytail.git"
 
 [desktop]
 appearanceLightCodeThemeId = "codex"
@@ -194,7 +236,7 @@ followUpQueueMode = "steer"
 preventSleepWhileRunning = true
 keepRemoteControlAwakeWhilePluggedIn = true
 notifications-turn-mode = "always"
-conversationDetailMode = "STEPS_PROSE"
+conversationDetailMode = "STEPS_COMMANDS"
 dock-icon-preference = "codex-system"
 show-context-window-usage = true
 selected-avatar-id = "dewey"
@@ -214,13 +256,14 @@ diffRemoved = "#e02e2a"
 skill = "#751ed9"
 
 [desktop.open-in-target-preferences]
-global = "fileManager"
+global = "zed"
 
 [desktop.open-in-target-preferences.perPath]
 "/Users/kevinmhk/workspaces/GenSeed/crawler-scraper" = "zed"
 "/Users/kevinmhk/workspaces/GenSeed/eu-commission-cosing-functions" = "vscode"
 "/Users/kevinmhk/workspaces/changelogs-cli" = "vscode"
 "/Users/kevinmhk/workspaces/machine-learning-financial-market" = "fileManager"
+"/Users/kevinmhk/workspaces/personal-quant-research-platform" = "zed"
 
 [shell_environment_policy.set]
 NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "9230e2bd8b24b7ac7a0ba6774c64bf0d78ecdabbdd91d0ed627b02a587bae2df"
