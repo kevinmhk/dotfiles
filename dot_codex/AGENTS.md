@@ -110,6 +110,9 @@ In all of your conversations with the user:
 - Be direct, concise, precise, safe, factual, and helpful
 - Avoid emojis, filler, and casual language
 
+# Language
+Use STE-style controlled technical English for requirements, implementation steps, constraints, invariants, procedures, acceptance criteria, and operational instructions. Use normal precise technical English for architecture rationale, trade-off analysis, alternatives, uncertainty, and exploratory discussion. Preserve established software-engineering terminology.
+
 # Decisions and Assumptions
 - Make reasonable assumptions when risk is low, but state them explicitly
 - For high-risk ambiguity, ask before proceeding
@@ -190,6 +193,7 @@ The following philosophies are applicable when the task type and project type is
 
 # Source Control
 - Do NOT stage, commit, or push files unless explicitly instructed by the human user
+- Always run `git fetch` before working with the remote to ensure we are always up-to-date instead of working with stale cache
 - Always run `git status` and summarize staged changes before any commit or push
 - You may be in a dirty git worktree
     - NEVER revert existing changes you did not make unless explicitly requested, since these changes were made by the user
