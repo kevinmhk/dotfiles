@@ -1,5 +1,0 @@
-# In: ~/.gemini/commands/git/push.toml
-# Invoked via: /git:push
-
-description = "Git push"
-prompt = "Git push to origin"
