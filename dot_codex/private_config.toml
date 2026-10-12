@@ -24,6 +24,9 @@ approval_policy = "never"
 # same as `--sandbox danger-full-access`
 sandbox_mode = "danger-full-access"
 
+[agents]
+max_concurrent_threads_per_session = 10
+
 [projects."/Users/kevinmhk/workspaces"]
 trust_level = "trusted"
 
@@ -137,6 +140,12 @@ trust_level = "trusted"
 [projects."/Users/kevinmhk/workspaces/GitHubCommunityClones/gods-eye-view"]
 trust_level = "trusted"
 
+[projects."/Users/kevinmhk/workspaces/GenSeed/Cosmetics-Data-Dictionary"]
+trust_level = "trusted"
+
+[projects."/Users/kevinmhk/workspaces/GitHubCommunityClones/phonsint"]
+trust_level = "trusted"
+
 [features]
 unified_exec = true
 shell_snapshot = true
@@ -152,13 +161,14 @@ memories = true
 
 [tui]
 status_line = ["model-with-reasoning", "current-dir", "project-name", "git-branch", "context-used", "total-input-tokens", "total-output-tokens", "five-hour-limit", "weekly-limit"]
+screen_reader_detection_done = true
 
 [tui.model_availability_nux]
 "gpt-5.5" = 4
+"gpt-6.1-sol" = 1
 
 [mcp_servers.figma]
 url = "https://mcp.figma.com/mcp"
-enabled = true
 
 [mcp_servers.node_repl]
 args = []
@@ -177,8 +187,8 @@ NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
 NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
 NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
-BROWSER_USE_CODEX_APP_VERSION = "26.930.51102"
-NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/kevinmhk/.codex/plugins/cache/openai-bundled/browser/26.930.51102/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+BROWSER_USE_CODEX_APP_VERSION = "26.1007.30912"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/kevinmhk/.codex/plugins/cache/openai-bundled/browser/26.1007.30912/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
 SKY_CUA_SERVICE_PATH = "/Users/kevinmhk/.codex/computer-use/Codex Computer Use.app"
 CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
 
@@ -187,6 +197,9 @@ command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.
 args = ["mcp"]
 cwd = "."
 enabled = false
+
+[mcp_servers.blender]
+command = "/Users/kevinmhk/workspaces/blender-experiments/local/blender-mcp-1.0.3/.venv/bin/blender-mcp"
 
 [plugins."google-calendar@openai-curated"]
 enabled = true
@@ -264,7 +277,7 @@ followUpQueueMode = "steer"
 preventSleepWhileRunning = true
 keepRemoteControlAwakeWhilePluggedIn = true
 notifications-turn-mode = "always"
-conversationDetailMode = "STEPS_PROSE"
+conversationDetailMode = "STEPS_COMMANDS"
 dock-icon-preference = "codex-system"
 show-context-window-usage = true
 selected-avatar-id = "dewey"
@@ -272,6 +285,7 @@ enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "persist
 mac-menu-bar-enabled = false
 toys-confetti-enabled = true
 toys-audio-visualizer-enabled = true
+browser-show-full-url = true
 
 [desktop.appearanceLightChromeTheme]
 accent = "#0169cc"
@@ -291,7 +305,7 @@ skill = "#751ed9"
 global = "vscode"
 
 [desktop.open-in-target-preferences.perPath]
-"/Users/kevinmhk/workspaces/GenSeed/crawler-scraper" = "zed"
+"/Users/kevinmhk/workspaces/GenSeed/crawler-scraper" = "vscode"
 "/Users/kevinmhk/workspaces/GenSeed/eu-commission-cosing-functions" = "vscode"
 "/Users/kevinmhk/workspaces/changelogs-cli" = "vscode"
 "/Users/kevinmhk/workspaces/machine-learning-financial-market" = "fileManager"
@@ -299,6 +313,8 @@ global = "vscode"
 "/Users/kevinmhk/workspaces/my_stack_setup" = "vscode"
 "/Users/kevinmhk/workspaces/quant-tweets-auditing" = "vscode"
 "/Users/kevinmhk/workspaces/populate_coding_agents_config" = "vscode"
+"/Users/kevinmhk/workspaces/GenSeed/Cosmetics-Data-Dictionary" = "vscode"
+"/Users/kevinmhk/workspaces/blender-experiments" = "vscode"
 
 [shell_environment_policy.set]
 NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "9230e2bd8b24b7ac7a0ba6774c64bf0d78ecdabbdd91d0ed627b02a587bae2df"
